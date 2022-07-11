@@ -1,0 +1,95 @@
+{
+  "msg": "",
+  "shopRefinedScoreValueList": [
+    "<d class=\"num\">&#xeedb;</d>.<d class=\"num\">&#xe836;</d>",
+    "<d class=\"num\">&#xeedb;</d>.<d class=\"num\">&#xe836;</d>",
+    "<d class=\"num\">&#xeedb;</d>.<d class=\"num\">&#xf26a;</d>"
+  ],
+  "code": 200,
+  "avgPriceTitle": "人均",
+  "avgPrice": "<d class=\"num\">&#xf5d6;</d><d class=\"num\">&#xe44a;</d>",
+  "score4": 0,
+  "defaultReviewCount": "<d class=\"num\">&#xe836;</d><d class=\"num\">&#xe807;</d>",
+  "fiveScore": "3.5",
+  "shopPower": 35,
+  "shopScoreTitleList": [
+    "口味",
+    "环境",
+    "服务",
+    "性价比"
+  ]
+}
+{
+  "msg": "",
+  "shopRefinedScoreValueList": [
+    "-",
+    "-",
+    "-"
+  ],
+  "code": 200,
+  "avgPriceTitle": "人均",
+  "avgPrice": "0",
+  "score4": 0,
+  "defaultReviewCount": "<d class=\"num\">&#xe44a;</d>",
+  "shopPower": 0,
+  "shopScoreTitleList": [
+    "口味",
+    "环境",
+    "服务",
+    "性价比"
+  ]
+}
+
+请输入起始页码1
+请输入结束页码2
+酥小姐私房烘焙
+https://www.dianping.com/ajax/json/shopDynamic/reviewAndStar?shopId=G6FOlMzuvYNWdt41&cityId=344&mainCategoryId=34245
+第1条数据处理失败
+http: //www.dianping.com/shop/G6FOlMzuvYNWdt41 0 酥小姐私房烘焙
+
+不已手製檸檬茶(国金店)
+https: //www.dianping.com/ajax/json/shopDynamic/reviewAndStar?shopId=l2h1ESY6mBjBs853&cityId=344&mainCategoryId=34237
+第2条数据处理失败
+http: //www.dianping.com/shop/l2h1ESY6mBjBs853 1 不已手製檸檬茶(国金店)
+
+手撕面包
+https: //www.dianping.com/ajax/json/shopDynamic/reviewAndStar?shopId=H5vYuHwO13zmcGVY&cityId=344&mainCategoryId=34245
+第3条数据处理失败
+http: //www.dianping.com/shop/H5vYuHwO13zmcGVY 2 手撕面包
+
+廣申国民点心
+https: //www.dianping.com/ajax/json/shopDynamic/reviewAndStar?shopId=H4b7ifFS0rdaY0IY&cityId=344&mainCategoryId=34245
+第4条数据处理失败
+http: //www.dianping.com/shop/H4b7ifFS0rdaY0IY 3 廣申国民点心
+
+茶颜悦色(九龙仓LG层美食广场店)
+https: //www.dianping.com/ajax/json/shopDynamic/reviewAndStar?shopId=k1HgIxRf0Dzx9Icv&cityId=344&mainCategoryId=34237
+第5条数据处理失败
+http: //www.dianping.com/shop/k1HgIxRf0Dzx9Icv 4 茶颜悦色(九龙仓LG层美食广场店)
+
+壹朵莲花
+https://www.dianping.com/ajax/json/shopDynamic/reviewAndStar?shopId=k5127tnuormJMTCu&cityId=344&mainCategoryId=34246
+第6条数据处理失败
+http: //www.dianping.com/shop/k5127tnuormJMTCu 5 壹朵莲花
+
+{
+"msg": "",
+"shopRefinedScoreValueList": [
+"<d class=\"num\">&#xeedb;</d>.<d class=\"num\">&#xf447;</d>",
+"<d class=\"num\">&#xeedb;</d>.<d class=\"num\">&#xe405;</d>",
+"<d class=\"num\">&#xeedb;</d>.<d class=\"num\">&#xf447;</d>"
+],
+"code": 200,
+"avgPriceTitle": "人均",
+"avgPrice": "1<d class=\"num\">&#xeedb;</d>",
+"score4": 0,
+"defaultReviewCount": "1<d class=\"num\">&#xeedb;</d><d class=\"num\">&#xe836;</d>",
+"fiveScore": "3.8",
+"shopPower": 35,
+"shopScoreTitleList": [
+"口味",
+"环境",
+"服务",
+"性价比"
+]
+}

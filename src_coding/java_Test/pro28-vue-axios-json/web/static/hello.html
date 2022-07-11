@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script language="JavaScript" src="./script/vue.js"></script>
+    <script language="JavaScript" src="./script/axios.min.js"></script>
+    <script type="Javascript">
+        window.onload = function () {
+            var vue = new Vue({
+                "el": "#div3",
+                data: {
+                    uname: "lina",
+                    pwd: "ok",
+                    msg:"1",
+                    a: "1",
+                },
+                methods: {
+                    anxios01: function () {
+                        axios({
+                            method: "post",
+                            url: "myanxios01.do",
+                            params: {
+                                "user": vue.uname,
+                                "userPwd": vue.pwd,
+                            }
+                        }).then(function (value) {
+                            console.log(value);
+                        }).catch(function (reason) {
+                            console.log(reason);
+                        });
+                    }
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+<div id="div3">
+    <span>{{msg}}</span><br>
+    uname: <input type="text" v-model="uname"><br>
+    pwd: <input type="text" v-model="pwd"><br>
+    <input type="button" value="按钮" @click="anxios01">
+</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+</head>
+<body>
+
+<form method="post" action="#" onsubmit="return preRegist();">
+    <td>
+    <th  >用户<input id="uname" type="text" placeholder="请输入用户名" name="pwd" value="ok"/></th>
+    <br>
+    <th>密码<input  type="password" placeholder="请输入密码" name="pwd" value="ok"/></th>
+    <br>
+    <th>确认密码<input type="password" placeholder="请再次输入密码" name="pwd" value="ok"/></th>
+    <br>
+    <th>邮箱 <input type="text" placeholder="请输入邮箱" name="email" value="bao@126.com"/></th>
+    <br>
+    <div>
+        <label>验证码:</label>
+        <div class="verify">
+            <input type="text" name="verifyCode" placeholder=""/>
+            <td>[1234]</td>
+        </div>
+    </div>
+</form>
+
+</body>
+</html>

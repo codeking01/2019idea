@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+
+
+
+
+<!-- brand-selector.vm -->
+
+
+
+
+
+
+
+
+
+            
+            
+        
+<!--suppress ALL -->
+<html dir="ltr" lang="en" ng-app="login">
+    <head>
+        <title>SciFinderⁿ Login</title>
+        <base href="https://sso.cas.org/"/>
+        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+        <meta content="IE=edge" http-equiv="x-ua-compatible"/>
+        <!-- cas.favicon.vm -->
+<link rel="shortcut icon" href="/assets/images/favicons/cas.ico" type="image/x-icon">
+        <link href="assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/open-sans-fontface/open-sans.css" rel="stylesheet">
+        <link href="assets/themes/cas.cas.css" rel="stylesheet" type="text/css"/>
+        <script src="assets/angular/angular.min.js"></script>
+        <script src="assets/angular-cookies/angular-cookies.min.js"></script>
+        <script type="text/javascript" src="/assets/sf/sf-app.js"></script>
+        <!-- script.tag.vm -->
+<script type="text/javascript">
+    // startTime is used in rendered Javascript on login page form submission to determine amount of time the user spent on the page
+    var startTime = Date.now();
+
+    var script = document.createElement("script");
+    script.type = "application/javascript";
+
+    if (typeof window.atob === "function")
+      script.src = window.atob('aHR0cHM6Ly9vc24tY2lycnVzLmNhcy5vcmcvZnAvdGFncy5qcz9vcmdfaWQ9NTQ5M3RibGMmc2Vzc2lvbl9pZD02ZTM4NTdmOC0zY2I4LTQ5ZmMtYTc1ZC1jNDRkYmRmNGQxNDg=');
+    else
+      script.src = 'https://osn-cirrus.cas.org/fp/tags.js?org_id=5493tblc&session_id=6e3857f8-3cb8-49fc-a75d-c44dbdf4d148';
+    document.head.appendChild(script);
+</script>
+    </head>
+    <body>
+        <!-- iframe.tag.vm -->
+<noscript>
+    <iframe style="width: 100px; height: 100px; border: 0; position: absolute; top: -5000px;" src="https://osn-cirrus.cas.org/fp/tags?org_id=5493tblc&session_id=6e3857f8-3cb8-49fc-a75d-c44dbdf4d148"></iframe>
+</noscript>
+        <!-- cas.form.login.vm -->
+
+
+
+
+
+
+
+
+<!-- base.form.login.vm -->
+<!--suppress ALL -->
+<div class="sign-in-form container-fluid">
+    <div class="row">
+        <div class="sign-in-form-header">
+            <div class="header-bar col-xs-12"></div>
+        </div>
+        <div class="sign-in-form-content col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2">
+            <div class="col-xs-12 ping-content-container">
+                <div class="row no-margin">
+                    <div class="col-xs-offset-2 col-xs-8 justify-content-center ping-logo-container">
+                        <div class="ping-header-logo row">
+                            <div class="col-xs-12 logo-container">
+                                <img class="cas-pillar-logo img-responsive" alt="SciFinder&#8319;" src="/assets/images/logos/cas-sfn-logo.svg"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ping-header-container">
+                    <div class="ping-header-title usernameGroup">
+                        <h3 class="title-text">
+                            <!-- render.registered.trademark.title.text.vm -->
+            Log In to SciFinder&#8319;
+                            </h3>
+                    </div>
+                    <div class="usernameGroup spacer"></div>
+                    <div class="ping-header-title hidden passwordGroup" id="welcomeHeader">
+                        <h3 class="title-text">
+                            <!-- render.registered.trademark.title.text.vm -->
+            Log In to SciFinder&#8319;
+                            </h3>
+                        <div
+                                class="passwordAnimationGroup">
+                            <div class="welcome-text" id="welcomeText">Welcome,
+                                <span id="welcomeUsername"></span>
+                            </div>
+                            <button class="btn btn-link btn-sm not-you-link btn-link-border btn-link-margin">
+                                Not You?
+                            </button>
+                        </div>
+                    </div>
+                    <div class="ping-header-title hidden federationGroup" id="welcomeheader-federation">
+                        <h3 class="title-text">
+                            <!-- render.registered.trademark.title.text.vm -->
+            Log In to SciFinder&#8319;
+                            </h3>
+                        <div class="federationAnimationGroup">
+                            <div class="welcome-text" id="welcomeFedText">Welcome,
+                                <span id="welcomeFedUsername"></span>
+                            </div>
+                            <button class="btn btn-link btn-sm not-you-link-federation">
+                                Not You?
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ping-body-container">
+                    <form id="loginForm" method="POST" action="/as/YSbH9/resume/as/authorization.ping">
+                        <div class="form-group usernameGroup username-control-container">
+                            <div class="ping-input-container">
+                                <label for="username" class="text-left">
+                                    Username or Email Address
+                                </label>
+                                <!---->
+                                                                    <input id="username" type="text" class="form-control" size="36" name="pf.username"
+                                           value="" autocapitalize="off" autocomplete="username" maxlength="241"/>
+                                                            </div>
+                        </div>
+                        <div class="form-group hidden passwordGroup password-control-container">
+                            <div class="ping-input-container password-control">
+                                <label for="password">
+                                    Password
+                                </label>
+                                <div id="password-container" class="password-container">
+                                    <input id="password" type="password" class="form-control" size="36" name="pf.pass"
+                                           autocomplete="current-password"/>
+                                    <span id="caps-lock-alert" class="hidden caps-lock-alert-icon"
+                                          data-toggle="popover" data-placement="right"
+                                          data-container="#password-container"
+                                          data-trigger="manual"
+                                          data-content="Caps Lock On">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group hidden federationGroup federation-control-container">
+                            <div class="ping-input-container password-control">
+                                <div id="federation-container" class="federation-container">
+                                    <a id="federationButton" type="button" class="btn btn-primary col-xs-12" href="">
+                                        <img id="entity-image" src="assets/images/logos/icon_seamlessaccess.svg"/>
+                                        <div id="vertical-bar"></div>
+                                        <div class="federation-btn-text" id="access-label">Access through...</div>
+                                        <div class="federation-btn-text" id="entity-name"></div>
+                                    </a>
+                                    <a id="password-display">Log in with your CAS ID.</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="form-group usernameGroup button-control-container">
+                            <div class="ping-input-container">
+                                <button id="continueButton" type="button" class="ping-button btn btn-primary col-xs-12"
+                                        onclick="submitUsername()"
+                                        title="Next"
+                                        disabled>
+                                    Next
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="form-group hidden passwordGroup button-control-container" id="submitGroup">
+                            <div class="ping-input-container">
+                                <input type="hidden" name="pf.ok" value=""/>
+                                <input type="hidden" name="pf.cancel" value=""/>
+
+                                <button id="loginButton" type="button" class="ping-button btn btn-primary col-xs-12"
+                                        onclick="submitForm()"
+                                        title="Log In"
+                                        disabled>
+                                    Log In
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- cas.secondary.account-actions.vm -->
+<!-- base.secondary.account-actions.vm -->
+<div class="form-group hidden passwordGroup button-control-container" id="submitgroup-secondary">
+    <div class="password-action-container">
+        <!-- remember.username.checkbox.vm -->
+<div class="form-group ping-input-container">
+    <div class="remember-username-container">
+        <label class="remember-username custom-control custom-checkbox">
+            <input type="checkbox" id="rememberUsername"
+                   class="custom-control-input"
+                   name="pf.rememberUsername" >
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">Keep me signed in</span>
+        </label>
+    </div>
+</div>
+    </div>
+</div>
+                        <input type="hidden" name="pf.adapterId" id="pf.adapterId" value="IDFFORM"/>
+                        <input type="hidden" name="displaycode" id="displaycode" value=""/>
+                    </form>
+                    <div ng-controller="RegistrationLinkController" class="account-actions-container">
+                        <div class="account-actions usernameGroup">
+                            <!-- cas.username.account-actions.vm -->
+<!-- base.username.account-actions.vm -->
+<div class="account-actions-anchors">
+    <div class="col-xs-12 centered-account-actions">
+                    <a ng-if="shouldDisplay" href="https://sso.cas.org/registration/#/home?appID=385&cancelURL=https%3A%2F%2Fsso.cas.org%2Fas%2Fauthorization.oauth2%3Fresponse_type%3Dcode%26client_id%3Dscifinder-n%26redirect_uri%3Dhttps%253A%252F%252Fscifinder-n.cas.org%252Fpa%252Foidc%252Fcb%26state%3DeyJ6aXAiOiJERUYiLCJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiNDNSczNKaWFhUEFkTnNpbmwtdkUtdnlnOWE4Iiwic3VmZml4IjoidXVHZ1ZTLjE2NDA1MTM1MDcifQ..vVpc4ZmgA_MfhtTE15g47g.roHw4F5bQ_kYvjDMZkmjiSCH9LQHLII-vwWrKBoRuI1TU2XGa-bRm3J8u3bcfDzmstEK9ZZD_rpYIj8DGFE4yYC38k4oztuHz_HBST4STbRKmrxzsN4BJKshBz67u-RC5Q-46RcOJWMG76VhEm4clyh8KhAfLLZs0KkcUrNAHRLYVq3YH6M6sMDpf11JhX516TZW1_kFFftMd2Y5w5SIR_42Lg0SVVDAzULg9fbT3-hmk3uxz5p1SXSiQUhyBITFHrrKNDhF-0spINwnCYUt7XkAVa5NlPdhBaL1lWrvRv8zW-9qYI8XsrIjrRztne3fHEXnvhrbhF5x8MNp6K6FOTl1ngWsYChXDk22jsUXF52mZgxWhNzumd3LecWKOBY2.NhFgmj8PDqVeo_BOP3_ktw%26nonce%3DMjsVgtSqxGwBQcEXE93Np1M13-ndCU7kRV7mFoM-Prg%26scope%3Dopenid%2520address%2520email%2520phone%2520profile%26vnd_pi_requested_resource%3Dhttps%253A%252F%252Fscifinder-n.cas.org%252Fnavigate%252F%253FanswerSetKey%253Dnull%2526appId%253D516389e7-c2cd-40a1-bfb1-d6bdd897fe3b%2526metricsResultType%253Dreference%2526page%253D1%2526projectionSourceNavKey%253D61beca09f2ea2c432f691b19%2526projectionSourceUriList%253Dsubstance%25252Fpt%25252F100005%2526resultType%253Dreference%2526resultView%253Dlist%2526sortBy%253Drelevance%2526sortOrder%253Ddescending%2526textQuery%253D100-00-5%2526uiContext%253D676%2526uiSubContext%253D551%26vnd_pi_application_name%3DSciFinder-nIDF&code=SSO_BEGIN" class="help-link create-account"
+               rel="noopener noreferrer">Create an account.</a>
+                                            <span ng-if="shouldDisplay" class="divider">|</span>
+                        <a href="https://accounts.cas.org/password" class="forgot-link"
+               rel="noopener noreferrer" target="_blank">
+                Can't log in?
+            </a>
+            </div>
+</div>
+                        </div>
+                        <div class="hidden account-actions passwordGroup federationGroup">
+                            <!-- cas.password.account-actions.vm -->
+<!-- base.password.account-actions.vm -->
+<div class="account-actions-anchors">
+    <div class="col-xs-12 centered-account-actions">
+                    <a ng-if="shouldDisplay" href="https://sso.cas.org/registration/#/home?appID=385&cancelURL=https%3A%2F%2Fsso.cas.org%2Fas%2Fauthorization.oauth2%3Fresponse_type%3Dcode%26client_id%3Dscifinder-n%26redirect_uri%3Dhttps%253A%252F%252Fscifinder-n.cas.org%252Fpa%252Foidc%252Fcb%26state%3DeyJ6aXAiOiJERUYiLCJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiNDNSczNKaWFhUEFkTnNpbmwtdkUtdnlnOWE4Iiwic3VmZml4IjoidXVHZ1ZTLjE2NDA1MTM1MDcifQ..vVpc4ZmgA_MfhtTE15g47g.roHw4F5bQ_kYvjDMZkmjiSCH9LQHLII-vwWrKBoRuI1TU2XGa-bRm3J8u3bcfDzmstEK9ZZD_rpYIj8DGFE4yYC38k4oztuHz_HBST4STbRKmrxzsN4BJKshBz67u-RC5Q-46RcOJWMG76VhEm4clyh8KhAfLLZs0KkcUrNAHRLYVq3YH6M6sMDpf11JhX516TZW1_kFFftMd2Y5w5SIR_42Lg0SVVDAzULg9fbT3-hmk3uxz5p1SXSiQUhyBITFHrrKNDhF-0spINwnCYUt7XkAVa5NlPdhBaL1lWrvRv8zW-9qYI8XsrIjrRztne3fHEXnvhrbhF5x8MNp6K6FOTl1ngWsYChXDk22jsUXF52mZgxWhNzumd3LecWKOBY2.NhFgmj8PDqVeo_BOP3_ktw%26nonce%3DMjsVgtSqxGwBQcEXE93Np1M13-ndCU7kRV7mFoM-Prg%26scope%3Dopenid%2520address%2520email%2520phone%2520profile%26vnd_pi_requested_resource%3Dhttps%253A%252F%252Fscifinder-n.cas.org%252Fnavigate%252F%253FanswerSetKey%253Dnull%2526appId%253D516389e7-c2cd-40a1-bfb1-d6bdd897fe3b%2526metricsResultType%253Dreference%2526page%253D1%2526projectionSourceNavKey%253D61beca09f2ea2c432f691b19%2526projectionSourceUriList%253Dsubstance%25252Fpt%25252F100005%2526resultType%253Dreference%2526resultView%253Dlist%2526sortBy%253Drelevance%2526sortOrder%253Ddescending%2526textQuery%253D100-00-5%2526uiContext%253D676%2526uiSubContext%253D551%26vnd_pi_application_name%3DSciFinder-nIDF&code=SSO_BEGIN" class="help-link create-account"
+               rel="noopener noreferrer">Create an account.</a>
+                                            <span ng-if="shouldDisplay" class="divider">|</span>
+                        <a href="https://accounts.cas.org/password" class="forgot-link"
+               rel="noopener noreferrer" target="_blank">
+                Can't log in?
+            </a>
+            </div>
+</div>
+                        </div>
+                    </div>
+                                    </div>
+            </div>
+        </div>
+    </div>
+            <div class="col-xs-12 terms-and-conditions">
+                            By using CAS SciFinder&#8319;,
+                        you agree to the
+            <a href="https://www.cas.org/legal" class="help-link"
+               rel="noopener noreferrer" target="_blank">License Agreements and Policies</a>
+        </div>
+        <div class="sign-in-form-footer row">
+        <div id="footer" class=" col-xs-12 ping-footer-container">
+            <!-- cas.login.footer.vm -->
+<div class="copyright-links">
+    <a href="https://www.cas.org/about" class="about-us-link"
+       rel="noopener noreferrer" target="_blank">About CAS</a>
+    <span class="divider"></span>
+    <a href="https://www.cas.org/contact" class="contact-us-link"
+       rel="noopener noreferrer" target="_blank">Contact Us</a>
+    <span class="divider"></span>
+    <a href="https://www.cas.org/legal" class="legal-link"
+       rel="noopener noreferrer" target="_blank">Legal</a>
+</div>
+<div class="copyright">
+    <p class="copyright-text">Copyright &copy; 2021 American Chemical Society. All Rights Reserved. | <a href="https://beian.miit.gov.cn" id="chinese-link" class="chinese" lang="zh">&#20140;ICP&#22791;13047075&#21495;-3</a></p>
+</div>
+        </div>
+    </div>
+</div>
+        <script src="assets/jquery/dist/jquery.slim.min.js" type="text/javascript"></script>
+        <script src="assets/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+        <!-- common.form.login.js.vm -->
+<script>
+    "use strict";
+
+    var displayNameAttribute = "";
+
+    var entityDataAvailable = false;
+
+    function clearErrorMessages() {
+        $("#errorContainer").addClass("hidden");
+    }
+
+    function checkEmptyForm() {
+        var passwordField = $("#password");
+        $("#loginButton").prop('disabled', passwordField.val() === "");
+        var usernameField = $("#username");
+        $("#continueButton").prop('disabled', usernameField.val() === "");
+    }
+
+    function setFocus() {
+        var platform = navigator.platform;
+        if (!platform || platform.indexOf("iPhone") === -1) {
+                        document.getElementById('username').focus();
+                    }
+    }
+
+    function submitUsername() {
+        if ($("#username").val() === '') {
+            checkEmptyForm();
+        } else {
+                            checkUsername("/as/YSbH9/resume/as/authorization.ping");
+                    }
+        return true
+    }
+
+    function clearUsername() {
+        $("#username").val("");
+        $("#password").val("");
+        clearErrorMessages();
+        checkEmptyForm();
+        $(".usernameGroup").removeClass("hidden");
+        $(".passwordGroup").addClass("hidden");
+        $("#rememberUsername").prop('checked', false);
+        $("#username").focus();
+        clearDisplayNameAttribute();
+
+        return true;
+    }
+
+    function clearDisplayNameAttribute() {
+        displayNameAttribute = "";
+        $("#displaycode").val("");
+    }
+
+        if(displayNameAttribute) {
+        if(entityDataAvailable) {
+                        displayFederation("/as/YSbH9/resume/as/authorization.ping", "$entityIdAttribute", "$entityNameAttribute");
+        } else {
+                        displayPassword();
+        }
+
+                                        if($("#username").val() !== '') {
+          $("#username").val("");
+        }
+                        $("#displaycode").val("PW");
+    }
+
+    if($("#username").val() !== '') {
+        submitUsername();
+    }
+
+        var checkbox = document.getElementById('rememberUsername');
+    
+    var width = getScreenWidth(),
+        remember = false && true;
+
+
+    $(document).ready(function () {
+        var timer;
+        document.msCapsLockWarningOff = true;
+        $('[data-toggle="popover"]').popover();
+        $('#caps-lock-alert')
+            .on('mouseenter', function(e) {
+                timer = setTimeout(function() {
+                    if($(e.currentTarget).is(':hover')) {
+                        $(e.currentTarget).popover('show');
+                        $(e.currentTarget).data('wasActivatedByHover', true);
+                    }
+                }, 2000);
+            })
+            .on('mouseleave', function(e) {
+                if($(e.currentTarget).data('wasActivatedByHover')) {
+                    $(e.currentTarget).popover('hide');
+                    $(e.currentTarget).data('wasActivatedByHover', false);
+                }
+                clearTimeout(timer);
+            })
+            .on('click', function(e) {
+                $(this).popover('toggle');
+            });
+        $("#password").on("change paste keyup", function(e) {
+            checkEmptyForm();
+        });
+        $('#password').keypress( function(event) {
+            var keycode = (event.keyCode ? event.keyCode : event.which);
+            if(keycode == '13'){
+                $('#loginButton').click();
+            }
+            capLock(event.originalEvent.getModifierState("CapsLock"));
+        });
+        $("#username").keypress( function(e) {
+            if ((!!e && !!e.which ? e.which : (!!window.event ? window.event.keyCode : undefined)) === 13) {
+                submitUsername();
+            }
+        });
+        $("#username").on("change paste keyup", function(e) {
+            checkEmptyForm();
+        });
+
+        $(".not-you-link").on("click", function() {
+            clearUsername();
+            $('#caps-lock-alert').popover('hide');
+            $("#caps-lock-alert").addClass("hidden");
+        });
+
+        $(".not-you-link-federation").on("click", function() {
+            clearDisplayNameAttribute();
+            notYouFederation();
+        });
+
+        $("#password-display").on("click", function() {
+            federationPasswordDisplay();
+        });
+
+        setInterval(checkEmptyForm, 1000);
+
+})
+
+    // If caps lock is on, show an alert
+    function capLock(isOn) {
+        if (isOn) {
+            $("#caps-lock-alert").removeClass("hidden");
+        } else {
+            $("#caps-lock-alert").addClass("hidden");
+        }
+    }
+
+    function setMobile(mobile) {
+                checkbox.checked = mobile || remember;
+            }
+
+    function getScreenWidth() {
+        return (window.outerHeight) ? window.outerWidth : document.body.clientWidth;
+    }
+
+    if (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        setMobile(true);
+    } else {
+        setMobile((width <= 480));
+        window.onresize = function() {
+            width = getScreenWidth();
+            setMobile((width <= 480));
+        }
+    }
+    var isColliding = isOverlapping($(".sign-in-form-content"), $(".ping-footer-container"))
+    $(window).on('resize', function(){
+        isColliding = isOverlapping($(".sign-in-form-content"), $(".ping-footer-container"))
+        setFooter()
+    })
+    function setFooter(){
+            console.log(isColliding)
+        if(isColliding){
+            $(".ping-footer-container").css("position","relative")
+        }
+    }
+    setFooter()
+
+
+    function isOverlapping($div1, $div2){
+    var x1 = $div1.offset().left;
+    var y1 = $div1.offset().top;
+    var h1 = $div1.outerHeight(true);
+    var w1 = $div1.outerWidth(true);
+    var b1 = y1 + h1;
+    var r1 = x1 + w1;
+    var x2 = $div2.offset().left;
+    var y2 = $div2.offset().top;
+    var h2 = $div2.outerHeight(true);
+    var w2 = $div2.outerWidth(true);
+    var b2 = y2 + h2;
+    var r2 = x2 + w2;
+
+    if (b1 < y2 || y1 > b2 || r1 < x2 || x1 > r2) return false;
+    return true;
+    }
+
+    var formHasBeenSubmitted = false;
+var profilingIsComplete = false;
+var loginForm = document.getElementById("loginForm");
+var pageIsLoading = false;
+function submitForm() {
+    // disable the login button to prevent double submission
+    document.getElementById("loginButton").disabled = true;
+
+    // set this flag to true so we can kick out of our wait prematurely if needed
+    formHasBeenSubmitted = true;
+
+    // if profiling completed prior to the user clicking "log in", just log the user in
+    if(!profilingIsComplete) {
+        submitAfterFiveSecondsHasElapsed();
+    } else {
+        loginForm.submit();
+    }
+}
+function addEvent(evnt, elem, func) {
+    if (elem.addEventListener)  // W3C DOM
+        elem.addEventListener(evnt,func,false);
+    else if (elem.attachEvent) { // IE DOM
+        elem.attachEvent("on"+evnt, func);
+    }
+}
+addEvent('beforeunload', window, function (e) {
+    pageIsLoading = true;
+})
+
+function submitAfterFiveSecondsHasElapsed() {
+            var submitTime = Date.now();
+        var elapsedTime = submitTime - startTime;
+        var jsLoginWaitTime = (5000) ? 5000 : 0;
+        if(elapsedTime < jsLoginWaitTime){
+            setTimeout(
+                function() {
+                     if(!pageIsLoading) {
+                        loginForm.submit();
+                     }
+                    }, jsLoginWaitTime-elapsedTime);
+        } else {
+            loginForm.submit();
+        }
+    }
+
+function tmx_profiling_complete(session_id) {
+    // set this flag to true so we can avoid waiting after clicking submit
+    profilingIsComplete = true;
+
+    // if the user has already clicked "log in" and then profiling completes, go ahead and
+    // submit the form
+    if(formHasBeenSubmitted && !pageIsLoading) {
+            loginForm.submit();
+    }
+}
+    function checkUsername(resumeurl) {
+    var request = new XMLHttpRequest();
+    request.open('GET', '/account-management/api/sso/identityProviders/' + $("#username").val(), true);
+    request.onload = function () {
+        if (request.status == 200) {
+            var entity = JSON.parse(this.response);
+            displayFederation(resumeurl, entity["entityId"], entity["entityName"]);
+        } else {
+            displayPassword();
+        }
+    }
+    request.send();
+}
+
+function displayPassword() {
+    $(".usernameGroup").addClass("hidden");
+    $(".passwordGroup").removeClass("hidden");
+    $(".passwordAnimationGroup").addClass("fade-in-top");
+    if(typeof displayNameAttribute !== 'undefined' && displayNameAttribute) {
+        $("#welcomeUsername").text(displayNameAttribute);
+    } else {
+        $("#welcomeUsername").text($("#username").val());
+    }
+    $("#welcomeUsername").focus();
+    $("#password").focus();
+}
+
+function displayFederation(resumeurl, entityId, entityName) {
+    var url = resumeurl + "?entityId=" + entityId + "&code=SSO_BEGIN";
+    $("#federationButton").attr("href", url);
+    $("#entity-name").text(entityName);
+    $(".usernameGroup").addClass("hidden");
+    $(".federationGroup").removeClass("hidden");
+    $(".federationAnimationGroup").addClass("fade-in-top");
+    if(typeof displayNameAttribute !== 'undefined' && displayNameAttribute) {
+        $("#welcomeFedUsername").text(displayNameAttribute);
+    } else {
+        $("#welcomeFedUsername").text($("#username").val());
+    }
+    $("#federationButton").focus();
+    $(".account-actions-container").addClass("federation");
+}
+
+function federationPasswordDisplay() {
+    $(".federationGroup").addClass("hidden");
+    $(".account-actions-container").removeClass("federation");
+    displayPassword();
+}
+
+function notYouFederation() {
+    $("#username").val("");
+    $(".usernameGroup").removeClass("hidden");
+    $(".federationGroup").addClass("hidden");
+    $(".account-actions-container").removeClass("federation");
+    $("#rememberUsername").prop('checked', false);
+    $("#username").focus();
+
+    checkEmptyForm();
+    return true;
+}
+</script>
+            </body>
+</html>

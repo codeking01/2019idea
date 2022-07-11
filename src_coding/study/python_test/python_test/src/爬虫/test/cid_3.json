@@ -1,0 +1,38 @@
+{
+  "SDQOutputSet": [
+    {
+      "status": {
+        "code": 0
+      },
+      "inputCount": 0,
+      "totalCount": 1,
+      "collection": "compound",
+      "type": "flattable",
+      "rows": [
+        {
+          "cid": 21180297,
+          "mw": 224.56,
+          "polararea": 37.3,
+          "complexity": 229,
+          "xlogp": 3,
+          "heavycnt": 14,
+          "hbonddonor": 1,
+          "hbondacc": 5,
+          "rotbonds": 1,
+          "annothitcnt": 4,
+          "cidcdate": 20071205,
+          "cmpdname": "3-Chloro-4-(trifluoromethyl)benzoic acid",
+          "cmpdsynonym": "3-chloro-4-(trifluoromethyl)benzoic acid|115754-20-6|Benzoic acid, 3-chloro-4-(trifluoromethyl)-|3-CHLORO-4-TRIFLUOROMETHYL-BENZOIC ACID|ACMC-1C5TN|MFCD04972755|3-Chloro-4-trifluoromethylbenzoic acid|SCHEMBL1920001|DTXSID20611137|ZINC2540211|SBB096710|AKOS015956910|Chloro-4-(trifluoromethyl)benzoic acid|JS-4829|3-Chloro-4-(trifluoromethyl)benzoic acid, 97%",
+          "inchi": "InChI=1S/C8H4ClF3O2/c9-6-3-4(7(13)14)1-2-5(6)8(10,11)12/h1-3H,(H,13,14)",
+          "inchikey": "UDXPRKSPAZWHQN-UHFFFAOYSA-N",
+          "isosmiles": "C1=CC(=C(C=C1C(=O)O)Cl)C(F)(F)F",
+          "iupacname": "3-chloro-4-(trifluoromethyl)benzoic acid",
+          "mf": "C8H4ClF3O2",
+          "sidsrcname": "001Chemical|A2B Chem|AA BLOCKS|Aaron Chemicals LLC|abcr GmbH|Acadechem|Aceschem Inc|Achemica|Achemo Scientific Limited|Activate Scientific|AEchem Scientific Corp., USA|AHH Chemical co.,ltd|AKos Consulting & Solutions|Alfa Aesar|Alichem|Ambeed|Ambinter|Angel Pharmatech Ltd.|Angene Chemical|Aurora Fine Chemicals LLC|BePharm Ltd.|BLD Pharm|BOC Sciences|Chem-Space.com Database|Chembase.cn|Chemenu Inc.|Chemieliva Pharmaceutical Co., Ltd|ChemSpider|ChemTik|Clearsynth|DiscoveryGate|eNovation Chemicals|EPA DSSTox|Google Patents|Hangzhou Trylead Chemical Technology|IBM|iChemical Technology USA Inc|Key Organics/BIONET|King Scientific|LabNetwork, a WuXi AppTec Company|Lan Pharmatech|Matrix Scientific|MolCore BioPharmatech|MolPort|MuseChem|NextMove Software|Norris Pharm|OXCHEM CORPORATION|PATENTSCOPE (WIPO)|Pi Chemicals|Race Chemical|SCRIPDB|Sinfoo Biotech|Smolecule|SureChEMBL|SynHet - Synthetic Heterocycles|THE BioTek|TimTec|VWR, Part of Avantor|Wubei-Biochem|ZINC",
+          "depcatg": "Chemical Vendors|Curation Efforts|Governmental Organizations|Legacy Depositors|Research and Development|Subscription Services",
+          "annothits": "Classification|Names and Identifiers|Patents|Safety and Hazards"
+        }
+      ]
+    }
+  ]
+}

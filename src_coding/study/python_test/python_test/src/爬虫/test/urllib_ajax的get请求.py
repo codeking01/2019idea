@@ -1,0 +1,19 @@
+import urllib.request
+
+url='https://movie.douban.com/j/chart/top_list?type=5&interval_id=100%3A90&action=&start=0&limit=20'
+headers={
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4595.0 Safari/537.36'
+}
+request=urllib.request.Request(url=url,headers=headers)
+response=urllib.request.urlopen(request)
+content=response.read().decode('utf-8')
+# print(content)
+# open（）方法 默认的情况下使用的gbk编码，
+# 如果我们想要保存汉字，则需要在open（）方法里面指定编码格式为UTF-8，例如
+#  encoding='utf-8'
+# fp=open('douban.json','w',encoding='utf-8')
+# fp.write(content)
+
+# 另一种写法
+with open('douban.json', 'w', encoding='utf-8') as fp :
+    fp.write(content)

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script language="javascript" src="script/vue.js"></script>
+    <script language="javascript">
+        window.onload = function () {
+            var vue = new Vue({
+                "el": "#div0",
+                data: {
+                    msg: "hello!",
+                    uname: "李白",
+                    umean: "张飞",
+                }
+            });
+            var vue = new Vue({
+                "el": "#div1",
+                data: {
+                    num: "",
+                }
+            });
+            var vue = new Vue({
+                "el": "#app03",
+                data: {
+                    flag: false,
+                    name: "123",
+                }
+            });
+            var vue = new Vue({
+                "el": "#app04",
+                data: {
+                    msg: "hello world!",
+                },
+                methods: {
+                    reverseMessage: function () {
+                        this.msg = this.msg.split("").reverse().join("");
+                    }
+                },
+            });
+            var vue = new Vue({
+                "el": "#app05",
+                data: {
+                  num1:1,
+                  num2:2,
+                  num3:3,
+                },
+                watch:{
+                    num1:function (newValue) {
+                        this.num3 = parseInt(newValue)+parseInt(this.num2);
+                    },
+                    num2: function (newValue) {
+                        this.num3 = parseInt(newValue) + parseInt(this.num1);
+                    }
+                }
+            });
+
+            new Vue({
+                "el":"#app",
+                "data":{
+                    "message":"hello"
+                },
+                "methods":{
+                    "changeValue":function(){
+                        this.message = "new hello";
+                    }
+                },
+
+                // 1.实例创建之前
+                "beforeCreate":function(){
+                    console.log("beforeCreate:"+this.message);
+                },
+
+                // 2.实例创建完成
+                "created":function(){
+                    console.log("created:"+this.message);
+                },
+
+                // 3.数据挂载前
+                "beforeMount":function(){
+                    console.log("beforeMount:"+document.getElementById("content").innerText);
+                },
+
+                // 4.数据已经挂载
+                "mounted":function(){
+                    console.log("mounted:"+document.getElementById("content").innerText);
+                },
+
+                // 5.数据更新前
+                "beforeUpdate":function(){
+                    console.log("beforeUpdate:"+document.getElementById("content").innerText);
+                },
+
+                // 6.数据更新之后
+                "updated":function(){
+                    console.log("updated:"+document.getElementById("content").innerText);
+                }
+            });
+
+        }
+    </script>
+</head>
+<body>
+<div id="div0">
+    <span>{{msg}}</span>
+    <!--    单项绑定-->
+    <input type="text" :value="uname"/>
+    <input type="text" v-bind:value="umean"/>
+    <!--    双向绑定       :value可以省略-->
+    <!--    <input type="text" v-model:value="msg"/>-->
+    <input type="text" v-model="msg"/>
+
+    <!--    .trim修饰符
+    实际开发中，要考虑到用户在输入数据时，有可能会包含前后空格。
+    而这些前后的空格对我们程序运行来说都是干扰因素，要去掉。在v-model后面加上.trim修饰符即可实现。
+    Vue会帮助我们在文本框失去焦点时自动去除前后空格
+    -->
+    <input type="text" v-model.trim="msg"/>
+</div>
+
+<div id="div1">
+    <input type="text" v-model.trim="num">
+    <div v-if="num%2==0">你好啊，这是偶数</div>
+    <div v-else="num%2==0">你好啊，这是奇数</div>
+</div>
+
+<div id="app03">
+    <h3>v-show</h3>
+    <input v-show="!flag" type="text" v-model.trim="name">
+</div>
+<div id="app04">
+    <h3>{{msg}}</h3>
+    <!--    <button v-onclick="reverseMessage()"></button> reverseMessage()和reverseMessage不一样-->
+    <!--    v-on可以省略 变成@click-->
+    <!--    <button v-on:click="reverseMessage">点击反转</button>-->
+    <button @click="reverseMessage">点击反转</button>
+</div>
+
+<div id="app05">
+    <input type="text" v-model.trim="num1">+<input type="text" v-model.trim="num2">=<span>{{num3}}</span>
+</div>
+
+<!--钩子函数-->
+<div id="app">
+    <p id="content">{{message}}</p>
+    <button @click="changeValue">点我</button>
+</div>
+</body>
+</html>

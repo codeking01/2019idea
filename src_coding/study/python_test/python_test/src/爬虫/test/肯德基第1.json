@@ -1,0 +1,89 @@
+{
+  'Table': [
+    {
+      'rowcount': 68
+    }
+  ],
+  'Table1': [
+    {
+      'rownum': 1,
+      'storeName': '������̨',
+      'addressDetail': '������·109�Ű���̨���Ļ��㳡1��',
+      'pro': 'Wi-Fi,��Ʒ��',
+      'provinceName': '�����',
+      'cityName': '�����'
+    },
+    {
+      'rownum': 2,
+      'storeName': 'Ȱҵ���ϵ»�����',
+      'addressDetail': '���Ȱҵ�����̣���ͭǮ��',
+      'pro': 'Wi-Fi,���ڲι�,��Ʒ��',
+      'provinceName': '�����',
+      'cityName': '�����'
+    },
+    {
+      'rownum': 3,
+      'storeName': '���ϵ»����޹�˾ʱ������',
+      'addressDetail': '�����Ͳ��н��»�·161��',
+      'pro': 'Wi-Fi,��Ʒ��,���ղͻ�',
+      'provinceName': '�ӱ�ʡ',
+      'cityName': '�ȷ���'
+    },
+    {
+      'rownum': 4,
+      'storeName': '���վ  ',
+      'addressDetail': '���վ��վ��D������1�ż�Ʊ����',
+      'pro': '��Ʒ��',
+      'provinceName': '�����',
+      'cityName': '�����'
+    },
+    {
+      'rownum': 5,
+      'storeName': '��Χ�̵�',
+      'addressDetail': '�ϱ����1�ż�ó�������ġ������',
+      'pro': 'Wi-Fi,�㳪��,��Ʒ��,���ղͻ�',
+      'provinceName': '�����',
+      'cityName': '�����'
+    },
+    {
+      'rownum': 6,
+      'storeName': '����',
+      'addressDetail': '����1088��',
+      'pro': 'Wi-Fi,���ڲι�,��Ʒ��,���ղͻ�',
+      'provinceName': '����ʡ',
+      'cityName': '������'
+    },
+    {
+      'rownum': 7,
+      'storeName': '����',
+      'addressDetail': '���ü���������̩�����붫��·������������ֳ����̩�ﹺ������',
+      'pro': 'Wi-Fi,�㳪��,���ڲι�,��Ʒ��,���ղͻ�',
+      'provinceName': '�����',
+      'cityName': '�����'
+    },
+    {
+      'rownum': 8,
+      'storeName': '���վ���㳡',
+      'addressDetail': '��4��վ�ڵ��¿ϵ»�(�������ӣ�',
+      'pro': 'Wi-Fi,��Ʒ��',
+      'provinceName': '�����',
+      'cityName': '�����'
+    },
+    {
+      'rownum': 9,
+      'storeName': '��վ�߼ܲ�',
+      'addressDetail': '�������վB6-B7��Ʊ��������¥��',
+      'pro': '��Ʒ��',
+      'provinceName': '�����',
+      'cityName': '�����'
+    },
+    {
+      'rownum': 10,
+      'storeName': '��ׯ',
+      'addressDetail': '�б��������ֳ�����б���������һ��NO.179',
+      'pro': 'Wi-Fi,��Ʒ��',
+      'provinceName': '�����',
+      'cityName': '�����'
+    }
+  ]
+}

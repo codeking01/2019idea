@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="GENERAL_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/.idea/sonarlint" />
+      <excludeFolder url="file://$MODULE_DIR$/src_coding/dianping_spider/.idea/dataSources" />
+      <excludeFolder url="file://$MODULE_DIR$/src_coding/java_project/Javaweb_learning/.idea/dataSources" />
+      <excludeFolder url="file://$MODULE_DIR$/src_coding/java_Test/.idea/dataSources" />
+      <excludeFolder url="file://$MODULE_DIR$/src_coding/study/python_test/.idea/dataSources" />
+      <excludeFolder url="file://$MODULE_DIR$/src_coding/boot-01-helloworld/target/classes" />
+      <excludeFolder url="file://$MODULE_DIR$/src_coding/boot-01-helloworld/target/generated-sources" />
+      <excludeFolder url="file://$MODULE_DIR$/src_coding/boot-01-helloworld/target/generated-test-sources" />
+      <excludeFolder url="file://$MODULE_DIR$/src_coding/boot-01-helloworld/target/maven-archiver" />
+      <excludeFolder url="file://$MODULE_DIR$/src_coding/boot-01-helloworld/target/maven-status" />
+      <excludeFolder url="file://$MODULE_DIR$/src_coding/boot-01-helloworld/target/test-classes" />
+      <excludeFolder url="file://$MODULE_DIR$/src_coding/java_Test/.idea/artifacts" />
+      <excludeFolder url="file://$MODULE_DIR$/src_coding/java_Test/.idea/inspectionProfiles" />
+      <excludeFolder url="file://$MODULE_DIR$/src_coding/java_Test/.idea/libraries" />
+      <excludeFolder url="file://$MODULE_DIR$/src_coding/java_Test/javaweb/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/src_coding/java_Test/pro-cookie-Kaptcha-js/target/classes/target/classes/target/maven-archiver" />
+      <excludeFolder url="file://$MODULE_DIR$/src_coding/java_Test/pro-cookie-Kaptcha-js/target/classes/target/pro-cookie-Kaptcha-js/WEB-INF/classes/target/pro-cookie-Kaptcha-js/WEB-INF/classes/target/classes/target/pro-cookie-Kaptcha-js" />
+      <excludeFolder url="file://$MODULE_DIR$/src_coding/java_Test/pro-cookie-Kaptcha-js/target/classes/target/pro-cookie-Kaptcha-js/WEB-INF/lib" />
+      <excludeFolder url="file://$MODULE_DIR$/src_coding/java_Test/pro-cookie-Kaptcha-js/target/classes/target/pro-cookie-Kaptcha-js/META-INF" />
+      <excludeFolder url="file://$MODULE_DIR$/src_coding/java_Test/pro-cookie-Kaptcha-js/target/classes/target/maven-archiver" />
+      <excludeFolder url="file://$MODULE_DIR$/src_coding/java_Test/pro-cookie-Kaptcha-js/target/classes/com" />
+      <excludeFolder url="file://$MODULE_DIR$/src_coding/java_Test/pro-cookie-Kaptcha-js/target/classes/main" />
+      <excludeFolder url="file://$MODULE_DIR$/src_coding/java_Test/pro-cookie-Kaptcha-js/target/classes/src" />
+      <excludeFolder url="file://$MODULE_DIR$/src_coding/java_Test/pro-cookie-Kaptcha-js/target/pro-cookie-Kaptcha-js/WEB-INF/classes/target/classes/target/classes/target/pro-cookie-Kaptcha-js" />
+      <excludeFolder url="file://$MODULE_DIR$/src_coding/java_Test/pro-cookie-Kaptcha-js/target/pro-cookie-Kaptcha-js/WEB-INF/classes/target/classes/target/pro-cookie-Kaptcha-js/WEB-INF/lib" />
+      <excludeFolder url="file://$MODULE_DIR$/src_coding/java_Test/pro-cookie-Kaptcha-js/target/pro-cookie-Kaptcha-js/WEB-INF/classes/target/pro-cookie-Kaptcha-js/WEB-INF/classes/target/classes/target/classes/target/pro-cookie-Kaptcha-js" />
+      <excludeFolder url="file://$MODULE_DIR$/src_coding/java_Test/pro-cookie-Kaptcha-js/target/pro-cookie-Kaptcha-js/WEB-INF/classes/target/pro-cookie-Kaptcha-js/WEB-INF/classes/target/classes/target/pro-cookie-Kaptcha-js" />
+      <excludeFolder url="file://$MODULE_DIR$/src_coding/java_Test/pro-cookie-Kaptcha-js/target/pro-cookie-Kaptcha-js/WEB-INF/classes/target/pro-cookie-Kaptcha-js/WEB-INF/classes/target/pro-cookie-Kaptcha-js/WEB-INF/classes/target/classes/src" />
+      <excludeFolder url="file://$MODULE_DIR$/src_coding/java_Test/pro-cookie-Kaptcha-js/target/pro-cookie-Kaptcha-js/WEB-INF/classes/target/pro-cookie-Kaptcha-js/WEB-INF/classes/target/pro-cookie-Kaptcha-js/WEB-INF/classes/target/classes/target" />
+      <excludeFolder url="file://$MODULE_DIR$/src_coding/java_Test/pro-cookie-Kaptcha-js/target/pro-cookie-Kaptcha-js/WEB-INF/classes/target/pro-cookie-Kaptcha-js/WEB-INF/classes/target/pro-cookie-Kaptcha-js/WEB-INF/classes/target/maven-archiver" />
+      <excludeFolder url="file://$MODULE_DIR$/src_coding/java_Test/pro-cookie-Kaptcha-js/target/pro-cookie-Kaptcha-js/WEB-INF/classes/target/maven-archiver" />
+      <excludeFolder url="file://$MODULE_DIR$/src_coding/java_Test/pro-cookie-Kaptcha-js/target/pro-cookie-Kaptcha-js/WEB-INF/lib" />
+      <excludeFolder url="file://$MODULE_DIR$/src_coding/java_Test/pro-cookie-Kaptcha-js/target/pro-cookie-Kaptcha-js/META-INF" />
+      <excludeFolder url="file://$MODULE_DIR$/src_coding/java_Test/pro-cookie-Kaptcha-js/target/generated-sources" />
+      <excludeFolder url="file://$MODULE_DIR$/src_coding/java_Test/pro-cookie-Kaptcha-js/target/maven-archiver" />
+      <excludeFolder url="file://$MODULE_DIR$/src_coding/maven_workspace/.idea/artifacts" />
+      <excludeFolder url="file://$MODULE_DIR$/src_coding/maven_workspace/.idea/libraries" />
+      <excludeFolder url="file://$MODULE_DIR$/src_coding/maven_workspace/Hello/target" />
+      <excludeFolder url="file://$MODULE_DIR$/src_coding/study/django_app/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/src_coding/study/django_first/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/src_coding/study/django_guliedu/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/src_coding/study/project01/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/src_coding/study/python_test/python_test/src/爬虫/code/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/src_coding/study/python_test/python_test/src/爬虫/task/2022_01/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/src_coding/study/python_test/python_test/src/爬虫/task/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/src_coding/study/python_test/python_test/src/爬虫/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/src_coding/study/python_test/python_test/src/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/src_coding/study/python_test/python_test/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/src_coding/study/python_test/.idea" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

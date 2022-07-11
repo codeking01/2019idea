@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script language="javascript" src="./script/vue.js"></script>
+    <script language="javascript" src="./script/axios.min.js"></script>
+    <script language="javascript">
+        // window.onload = function () {
+        //     var vue = new Vue({
+        //         "el": "#div3",
+        //         data: {
+        //             uname: "李白",
+        //             pwd: "123",
+        //             msg: "测试",
+        //         },
+        //         methods: {
+        //             anxios01:function(){
+        //                 axios({
+        //                     method: "post",
+        //                     url: "myanxios01.do",
+        //                     params: {
+        //                         "user": vue.uname,
+        //                         "userPwd": vue.pwd,
+        //                     }
+        //                 }).then(function (value) {
+        //                     console.log(value);
+        //                 }).catch(function (reason) {
+        //                     console.log(reason);
+        //                 });
+        //             },
+        //         }
+        //     });
+        // }
+        window.onload = function () {
+            var vue = new Vue({
+                "el": "#div3",
+                data: {
+                    uname: "lina",
+                    pwd: "ok",
+                    msg: "测试",
+                },
+                methods: {
+                    // anxios01:function (){
+                    axios03:function (){
+                        axios({
+                            method: "post",
+                            url: "axios03.do",
+                            // params: {  普通数据
+                            data: {  //处理json数据的用data
+                                uname: vue.uname,
+                                pwd: vue.pwd,
+                            //     "stuId": 55,
+                            //     "stuName": "tom",
+                            //     "subjectList": [
+                            //         {
+                            //             "subjectName": "java",
+                            //             "subjectScore": 50.55
+                            //         },
+                            //         {
+                            //             "subjectName": "php",
+                            //             "subjectScore": 30.26
+                            //         }
+                            //     ],
+                            //     "teacherMap": {
+                            //         "one": {
+                            //             "teacherName":"tom",
+                            //             "tearcherAge":23
+                            //         },
+                            //         "two": {
+                            //             "teacherName":"jerry",
+                            //             "tearcherAge":31
+                            //         },
+                            //     },
+                            //     "school": {
+                            //         "schoolId": 23,
+                            //         "schoolName": "atguigu"
+                            //     }
+                            }
+                        }).then(function (value) {
+                            var data=value.data;
+                            // console.log(data);
+                            vue.uname = data.uname;
+                            vue.pwd=data.pwd;
+                        }).catch(function (erro) {
+                            console.log(erro);
+                        });
+                    }
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+<div id="div3">
+    <span>{{msg}}</span><br>
+    uname: <input type="text" v-model="uname"><br>
+    pwd: <input type="text" v-model="pwd"><br>
+<!--    <input type="button" value="按钮" @click="anxios01">-->
+    <input type="button" value="json按钮" @click="axios03">
+</div>
+</body>
+</html>
